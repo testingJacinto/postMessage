@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba de postMessage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Prueba de postMessage</h1>
+    <p>Haz clic en el botón para enviar un mensaje a React Native</p>
+    <button onclick="sendMessage()">Enviar Mensaje</button>
+
+    <script>
+        function sendMessage() {
+            window.ReactNativeWebView.postMessage("Hola desde la página web!");
+        }
+    </script>
+</body>
+</html>
